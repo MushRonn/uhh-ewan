@@ -1,0 +1,209 @@
+/* Custom Purple Modern Pixel Art Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0b071e; /* Match dark indigo sky tone */
+    color: #fff;
+    font-family: 'Press Start 2P', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url('imgs/slide1_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#game-container {
+    width: 100%;
+    max-width: 768px;
+    height: 520px;
+    background: #181236; /* Slate purple window frame */
+    border: 6px solid #6c5ce7;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    box-shadow: 0 0 30px rgba(108, 92, 231, 0.4);
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+#scene-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    background: #060214;
+    border: 4px solid #3b2d75;
+    position: relative;
+}
+
+/* Base static background image always in the rear */
+#scene-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: pixelated;
+    z-index: 1;
+}
+
+/* Dynamic overlay image */
+#scene-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: pixelated;
+    z-index: 2;
+    display: block;
+}
+
+/* Overlay video sizing and transparency blending */
+#scene-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: pixelated;
+    z-index: 3;
+    display: none;
+    mix-blend-mode: multiply; /* Removes solid white backgrounds */
+}
+
+/* Slide 1 Text Elements Overlay */
+#title-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 18, 54, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 10;
+    transition: opacity 0.5s ease-out;
+}
+
+.main-title {
+    font-size: 2.2rem;
+    color: #fdcb6e; /* Gold heading color */
+    margin: 12px 0;
+    text-shadow: 3px 3px 0px #d63031; /* Retro drop shadow */
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #a29bfe;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.author-tag {
+    font-size: 0.75rem;
+    color: #00cec9;
+    margin-top: 15px;
+}
+
+/* UI Dialogue Box Container */
+#text-box {
+    background: #0d0921;
+    border: 3px solid #6c5ce7;
+    padding: 18px;
+    min-height: 110px;
+    font-size: 0.75rem;
+    line-height: 1.7;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#speaker-name {
+    position: absolute;
+    top: -14px;
+    left: 16px;
+    background: #181236;
+    padding: 2px 10px;
+    border: 2px solid #6c5ce7;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #fdcb6e;
+}
+
+#choices {
+    display: none;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.btn {
+    background: #0d0921;
+    color: #fff;
+    border: 3px solid #00cec9;
+    padding: 12px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.7rem;
+    cursor: pointer;
+    flex: 1;
+    transition: all 0.15s;
+}
+
+.btn:hover {
+    background: #00cec9;
+    color: #0d0921;
+    box-shadow: 0 0 10px rgba(0, 206, 201, 0.6);
+}
+
+.arrow {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 0.65rem;
+    color: #a29bfe;
+    animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+#exit-screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #060214;
+    color: #ff7675;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.exit-text {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.exit-text-sub {
+    font-size: 0.8rem;
+    color: #636e72;
+}
