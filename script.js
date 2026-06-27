@@ -14,8 +14,9 @@ const script = [
     { speaker: "Ron J", text: "Okay na 'ko sa kung anong meron sa'tin at gagawin ko 'yong kayamanan, matagal na 'kong hindi umaasa pero hindi ko naman sinabing hindi na 'ko maghihintay.", image: "imgs/3.mp4", branch: 1 },
     { speaker: "Ron J", text: "Alam ko naman na hindi naman ako ung gusto mo at hindi ko pa tanggap yon pero wala naman akong magagawa na kundi tanggapin e, pero hindi ibig sabihin na gusto kita e di kana mag eenjoy ng time with other males.", image: "imgs/4.mp4", branch: 1 },
     { speaker: "Ron J", text: "Ngapala wala akong inaantay o hinihingi na kapalit pag nililibre ko kayo, hindi ko alam bakit pag ako nanlilibre sayo ayaw mo pero sa iba gusto mo e, dun palang as in masakit kahit as a friend.", image: "imgs/1.mp4", branch: 1 },
-    { speaker: "Ron J", text: "so ayun lang, sana na clear ko lahat. Masaya ako sayo na may kaibigan kang much better and hindi kupal like me, masaya akong nakikita kang masaya. Dun lang okay na ko, masaya ako for you and please always be happy:)", image: "imgs/2.mp4", branch: 1 },
-    { speaker: "Ron J", text: "sorry if limited mga mp.4 ko, ulit ulit kase wala na 'ko magawa.", image: "imgs/2.mp4", branch: 1 },
+    { speaker: "Ron J", text: "So ayun lang, sana na clear ko lahat. Masaya ako sayo na may kaibigan kang much better and hindi kupal like me, masaya akong nakikita kang masaya. Dun lang okay na ko, masaya ako for you and please always be happy:)", image: "imgs/2.mp4", branch: 1 },
+    { speaker: "Ron J", text: "Sorry if limited mga mp.4 ko, ulit ulit kase wala na 'ko magawa.", image: "imgs/2.mp4", branch: 1 },
+    { speaker: "Ron J", text: "Baka iniisip mo na nagiging distant ako or lumalayo ako sayo ha, hindi magaan lang talaga paa ko. Kung magkaron ka man ng ka something or what, ikaw na bahala since ikaw naman yan malaki kana. Sorry na agad sa drama.", image: "imgs/1.mp4", branch: 1 },
     { speaker: "Ron J", text: "I'll block u sa soc meds siguro pag sinipag ako para ano ewan bakit pero feel ko isa yon sa mga way na maayos, if need mo ko in person lapitan mo lang ako wag ka mahiya okay. Sana di maging awkward ung mga nangyare.", image: "imgs/1.mp4", branch: 1 },
     { speaker: "System", text: "In summary, wala gusto 'ko lang sumaya ka ng walang iniisip na may masasaktan or what, ayo'ko namang parang ma feel mo na para kang may kinemerut (bf) pero di naman talaga kayo and wala naman talagang meron sainyo tapos ganto pa umasta para namang tanga. So ayun gusto 'ko lang ma enjoy mo buhay mo. Wala sanang awkwardness and also please live ur life to the fullest.", image: "imgs/1.mp4", branch: 1 },
     { speaker: "Ron J", text: "Good Bye, thankyou, goodluck and always ingat Zhi, Tal, Batal, and Maasim:D", image: "imgs/4.mp4", isFinal: true, branch: 1 },
@@ -129,4 +130,16 @@ textBoxEl.addEventListener("click", nextScript);
 choice1Btn.addEventListener("click", (e) => { e.stopPropagation(); makeChoice(1); });
 choice2Btn.addEventListener("click", (e) => { e.stopPropagation(); makeChoice(2); });
 
+
+
 updateUI();
+
+function triggerExit() {
+    gameContainer.style.display = "none"; // Hides the main game window[cite: 10]
+    exitScreen.style.display = "flex";    // Shows the "CONNECTION TERMINATED" screen[cite: 10]
+
+    // Automatically attempt to close the tab after 3000 milliseconds (3 seconds)
+    setTimeout(() => {
+        window.close();
+    }, 3000);
+}
