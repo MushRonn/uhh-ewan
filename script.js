@@ -5,19 +5,19 @@ const script = [
     
     // --- BRANCH 1: Read Message ---
     // Reusing 1.mp4 through 4.mp4 sequentially across all slides
-    { speaker: "Ron J", text: "all I want to say is.... I'm sorry.", image: "imgs/2.mp4", branch: 1 },
-    { speaker: "Ron J", text: "may na kwento kase si hanz about nga sa kanina, pero kase di naman sa ano pero parang ang sama ko. Parang ako yung pumipigil sayo magkaron ng new friend which is no.", image: "imgs/3.mp4", branch: 1 },
-    { speaker: "Ron J", text: "Mabilis lng ako maglakad kase magaan paa ko, ganon ako kase may sarili akong dahilan. Pero ni isa don walang dahilan kase shinip ka kay ganto o ganyan.", image: "imgs/4.mp4", branch: 1 },
-    { speaker: "Ron J", text: "Sorry kase feel ko dahil sakin e parang nalilimitahan mo yung bawat galaw mo, or na fefeel bad ka if shiniship ka sa iba. Pero the thing is I don't care tbh. Live ur life to the fullest and enjoy it.", image: "imgs/1.mp4", branch: 1 },
+    // --- BRANCH 1: Read Message ---
+    { speaker: "Ron J", text: "All I want to say is.... I'm sorry.", image: "imgs/2.mp4", branch: 1 },
+    { speaker: "Ron J", text: "So feel ko lang no, parang ang awkward ng mga nangyayare since yun nga inaasar ka nila sa ibang tao sa harap ko which is okay lang naman. Wala naman akong karapatan e.", image: "imgs/3.mp4", branch: 1 },
+    { speaker: "Ron J", text: "Mabilis lng ako maglakad kase magaan paa ko, ganon ako kase may sarili akong dahilan. Pero ni isa don walang dahilan kase shinip ka kay ganto o ganyan. Ewan ko if ganon naiisip mo pero sana wag.", image: "imgs/4.mp4", branch: 1 },
+    { speaker: "Ron J", text: "Sorry kase feel ko dahil sakin e parang nalilimitahan mo yung bawat galaw mo, or na fefeel bad ka if shiniship ka sa iba. Pero the thing is I don't care tbh. Live ur life to the fullest and enjoy it, andito lang naman ako palagi bilang kaibigan mo.", image: "imgs/1.mp4", branch: 1 },
     { speaker: "Ron J", text: "Hindi porket mabilis ako maglakad e ibig sabihin may iba na kong iniisip about sa mga ships sayo. All I want to say is wala okay lang, okay lang naman saken di naman ako na aaragabyado or selos.", image: "imgs/2.mp4", branch: 1 },
-    { speaker: "Ron J", text: "pansinin mo si hanz wag ka magalit sakanya, okay narin siguro na nalaman ko kesa patuloy pala na naiisip mo na ganon ung nasa loob ko which is hindi naman. Masaya ako para sayo.", image: "imgs/3.mp4", branch: 1 },
-    { speaker: "Ron J", text: "alam ko naman na hindi naman ako ung gusto mo at hindi ko pa tanggap yon pero wala naman akong magagawa na kundi tanggapin e, pero hindi ibig sabihin na gusto kita e di kana mag eenjoy ng time with other males.", image: "imgs/4.mp4", branch: 1 },
+    { speaker: "Ron J", text: "Okay na 'ko sa kung anong meron sa'tin at gagawin ko 'yong kayamanan, matagal na 'kong hindi umaasa pero hindi ko naman sinabing hindi na 'ko maghihintay.", image: "imgs/3.mp4", branch: 1 },
+    { speaker: "Ron J", text: "Alam ko naman na hindi naman ako ung gusto mo at hindi ko pa tanggap yon pero wala naman akong magagawa na kundi tanggapin e, pero hindi ibig sabihin na gusto kita e di kana mag eenjoy ng time with other males.", image: "imgs/4.mp4", branch: 1 },
     { speaker: "Ron J", text: "Ngapala wala akong inaantay o hinihingi na kapalit pag nililibre ko kayo, hindi ko alam bakit pag ako nanlilibre sayo ayaw mo pero sa iba gusto mo e, dun palang as in masakit kahit as a friend.", image: "imgs/1.mp4", branch: 1 },
-    { speaker: "Ron J", text: "so ayun lang, sana na clear ko lahat. Masaya ako sayo na may kaibigan kang much better and hindi kupal like me, masaya akong nakikita kang masaya. Dun lang okay na ko.", image: "imgs/2.mp4", branch: 1 },
-    { speaker: "Ron J", text: "masaya naman ako for u, sorry if limited mga mp.4 ko HAHAHA ulit ulit.", image: "imgs/2.mp4", branch: 1 },
-    { speaker: "Ron J", text: "wag ka magalit kay hanz plz, ayoko manalo sya pustahan namin. Pag nanalo sya iiyak ako HAHAHHAHA", image: "imgs/3.mp4", branch: 1 },
-    { speaker: "Ron J", text: "I'll block u sa soc meds ewan bakit pero feel ko isa yon sa mga way na maayos, if need mo ko in person lapitan mo lang ako wag ka mahiya okay. Sana di maging awkward ung mga nangyare.", image: "imgs/1.mp4", branch: 1 },
-    { speaker: "System", text: "In summary, wala gusto ko lang sumaya ka ng walang iniisip na may masasaktan or what, ayoko namang parang ma feel mo na para kang may kinemerut (bf) pero di naman talaga kayo and wala naman talagang meron sainyo tapos ganto pa umasta para namang tanga HAHAHHAH so ayun gusto ko lang ma enjoy mo buhay mo. Wala sanang awkwardness and also please live ur life to the fullest.", image: "imgs/1.mp4", branch: 1 },
+    { speaker: "Ron J", text: "so ayun lang, sana na clear ko lahat. Masaya ako sayo na may kaibigan kang much better and hindi kupal like me, masaya akong nakikita kang masaya. Dun lang okay na ko, masaya ako for you and please always be happy:)", image: "imgs/2.mp4", branch: 1 },
+    { speaker: "Ron J", text: "sorry if limited mga mp.4 ko, ulit ulit kase wala na 'ko magawa.", image: "imgs/2.mp4", branch: 1 },
+    { speaker: "Ron J", text: "I'll block u sa soc meds siguro pag sinipag ako para ano ewan bakit pero feel ko isa yon sa mga way na maayos, if need mo ko in person lapitan mo lang ako wag ka mahiya okay. Sana di maging awkward ung mga nangyare.", image: "imgs/1.mp4", branch: 1 },
+    { speaker: "System", text: "In summary, wala gusto 'ko lang sumaya ka ng walang iniisip na may masasaktan or what, ayo'ko namang parang ma feel mo na para kang may kinemerut (bf) pero di naman talaga kayo and wala naman talagang meron sainyo tapos ganto pa umasta para namang tanga. So ayun gusto 'ko lang ma enjoy mo buhay mo. Wala sanang awkwardness and also please live ur life to the fullest.", image: "imgs/1.mp4", branch: 1 },
     { speaker: "Ron J", text: "Good Bye, thankyou, goodluck and always ingat Zhi, Tal, Batal, and Maasim:D", image: "imgs/4.mp4", isFinal: true, branch: 1 },
     
     // --- BRANCH 2: Close It ---
